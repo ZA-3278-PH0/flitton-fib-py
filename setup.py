@@ -12,7 +12,7 @@ setup(
     long_description= long_description,
     url="...",
     install_requires=[],
-    packages=find_packages(exlude=("tests",)),
+    packages=find_packages(exclude=("tests",)),
     classifiers=[
         "Development Status :: 4 - Beta",
         "Programming Language :: Python :: 3",
