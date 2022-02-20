@@ -1,18 +1,23 @@
-from importlib.metadata import entry_points
 from setuptools import find_packages, setup
+
 
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
+
 setup(
-    name="flitton_fib_py",
-    version=("0.0.1"),
-    author=("KKK"),
-    author_email=("KKK@ggmail.com"),
+    name="flitton_fib_py1",
+    version="0.0.1",
+    author="Maxwell Flitton",
+    author_email="maxwell@gmail.com",
     description="Calculates a Fibonacci number",
-    long_description= long_description,
-    url="...",
-    install_requires=[],
+    long_description=long_description,
+    long_description_content_type="text/markdown",
+    url="https://github.com/maxwellflitton/flitton-fib-py",
+    install_requires=[
+        "PyYAML >= 4.1.2",
+        "dill >= 0.2.8"
+    ],
     packages=find_packages(exclude=("tests",)),
     classifiers=[
         "Development Status :: 4 - Beta",

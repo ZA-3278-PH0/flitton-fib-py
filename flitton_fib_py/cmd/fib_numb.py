@@ -9,4 +9,4 @@ def fib_numb() -> None:
     args = parser.parse_args()
     print(f"Your Fibonacci number is: "
           f"{recurring_fibonacci_number(number=args.number)}")
-    )
+    
